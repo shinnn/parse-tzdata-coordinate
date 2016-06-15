@@ -1,0 +1,56 @@
+{
+  "name": "parse-tzdata-coordinate",
+  "version": "1.0.0",
+  "description": "Parse a coordinate string in zone.tab format e.g. `-2439+02555`",
+  "repository": "shinnn/parse-tzdata-coordinate",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "pretest": "bower install --production && eslint --config @shinnn --ignore-path .gitignore .",
+    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js | tap-spec",
+    "coverage": "istanbul cover -x=bower_components/tzdata-coordinate-regex/* test.js"
+  },
+  "license": "MIT",
+  "jsnext:main": "index.jsnext.js",
+  "files": [
+    "index.js",
+    "index.jsnext.js"
+  ],
+  "keywords": [
+    "string",
+    "parse",
+    "parser",
+    "regex",
+    "regexp",
+    "tz",
+    "tzdata",
+    "time",
+    "zone",
+    "timezone",
+    "coordinate",
+    "coordinates",
+    "lat",
+    "latitude",
+    "lon",
+    "lng",
+    "long",
+    "longitude",
+    "iso6709",
+    "client-side",
+    "browser"
+  ],
+  "dependencies": {
+    "tzdata-coordinate-regex": "^1.0.0"
+  },
+  "devDependencies": {
+    "@shinnn/eslint-config": "^2.3.0",
+    "bower": "^1.7.9",
+    "eslint": "^2.12.0",
+    "istanbul": "^0.4.3",
+    "require-bower-files": "^3.0.0",
+    "require-from-string": "^1.2.0",
+    "rollup": "^0.31.2",
+    "rollup-plugin-node-resolve": "^1.7.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1"
+  }
+}

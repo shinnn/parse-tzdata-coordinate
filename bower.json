@@ -1,0 +1,48 @@
+{
+  "name": "parse-tzdata-coordinate",
+  "description": "Parse a coordinate string in zone.tab format e.g. `-2439+02555`",
+  "keywords": [
+    "string",
+    "parse",
+    "parser",
+    "regex",
+    "regexp",
+    "tz",
+    "tzdata",
+    "time",
+    "zone",
+    "timezone",
+    "coordinate",
+    "coordinates",
+    "lat",
+    "latitude",
+    "lon",
+    "lng",
+    "long",
+    "longitude",
+    "iso6709"
+  ],
+  "main": "browser.js",
+  "moduleType": "globals",
+  "homepage": "https://github.com/shinnn/parse-tzdata-coordinate",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/parse-tzdata-coordinate.git"
+  },
+  "authors": [
+    "Shinnosuke Watanabe (https://github.com/shinnn)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "tzdata-coordinate-regex": "^1.0.0"
+  },
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "*.json",
+    "*.yml",
+    "bower_components",
+    "coverage",
+    "node_modules"
+  ]
+}
