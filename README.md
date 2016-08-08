@@ -4,8 +4,8 @@
 [![Bower version](https://img.shields.io/bower/v/parse-tzdata-coordinate.svg)](https://github.com/shinnn/parse-tzdata-coordinate/releases)
 [![Build Status](https://travis-ci.org/shinnn/parse-tzdata-coordinate.svg?branch=master)](https://travis-ci.org/shinnn/parse-tzdata-coordinate)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/parse-tzdata-coordinate.svg)](https://coveralls.io/github/shinnn/parse-tzdata-coordinate?branch=master)
-[![Dependency Status](https://david-dm.org/shinnn/parse-tzdata-coordinate.svg)](https://david-dm.org/shinnn/parse-tzdata-coordinate)
-[![devDependency Status](https://david-dm.org/shinnn/parse-tzdata-coordinate/dev-status.svg)](https://david-dm.org/shinnn/parse-tzdata-coordinate#info=devDependencies)
+[![dependencies Status](https://david-dm.org/shinnn/parse-tzdata-coordinate/status.svg)](https://david-dm.org/shinnn/parse-tzdata-coordinate)
+[![devDependencies Status](https://david-dm.org/shinnn/parse-tzdata-coordinate/dev-status.svg)](https://david-dm.org/shinnn/parse-tzdata-coordinate?type=dev)
 
 Parse a coordinate string in [`zone.tab`](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) format
 
