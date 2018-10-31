@@ -4,16 +4,15 @@
   "description": "Parse a coordinate string in zone.tab format e.g. `-2439+02555`",
   "repository": "shinnn/parse-tzdata-coordinate",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-  "scripts": {
-    "pretest": "bower install --production && eslint --fix --config @shinnn --ignore-path .gitignore .",
-    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js | tap-spec",
-    "coverage": "istanbul cover -x=bower_components/tzdata-coordinate-regex/* test.js"
-  },
   "license": "MIT",
-  "jsnext:main": "index.jsnext.js",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "nyc node test.js"
+  },
+  "module": "index.mjs",
   "files": [
     "index.js",
-    "index.jsnext.js"
+    "index.mjs"
   ],
   "keywords": [
     "string",
@@ -38,19 +37,19 @@
     "client-side",
     "browser"
   ],
-  "dependencies": {
-    "tzdata-coordinate-regex": "^1.0.0"
-  },
   "devDependencies": {
-    "@shinnn/eslint-config": "^3.0.1",
-    "bower": "^1.7.9",
-    "eslint": "^3.2.2",
-    "istanbul": "^0.4.4",
-    "require-bower-files": "^3.0.0",
-    "require-from-string": "^1.2.0",
-    "rollup": "^0.34.3",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.0"
+    "@shinnn/eslint-config": "^6.7.0",
+    "eslint": "^5.5.0",
+    "nyc": "^13.0.1",
+    "nyc-config-common": "^1.0.0",
+    "rollup": "^0.65.2",
+    "rollup-config-module": "^2.0.1",
+    "tape": "^4.9.1"
+  },
+  "eslintConfig": {
+    "extends": "@shinnn"
+  },
+  "nyc": {
+    "extends": "nyc-config-common"
   }
 }
